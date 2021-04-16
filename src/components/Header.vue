@@ -1,0 +1,53 @@
+<template>
+  <div>
+    <header>
+      <img class="logo" src="..\assets\logo.png" alt="logo" />
+      <nav>
+        <ul class="nav_links">
+           <li><a href="https://vuejs.org/">Vuejs Documentation</a></li>
+           <li><a href="https://vuetifyjs.com/en/">Vuetify Documentation</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+</template>
+<style scoped  lang="scss">
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+}
+ul{
+  list-style: none;
+  li {
+    display: inline-block;
+    padding: 0px 20px;
+    text-decoration: none;
+  }
+  a{
+      transition: all 0.3s ease 0s;
+      color: white;
+  }
+  a:hover{
+      color:#0088a9;
+  }
+}
+li,a{
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+}
+.logo {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+</style>
